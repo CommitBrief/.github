@@ -1,0 +1,113 @@
+name: Bug report
+description: Report a defect in a CommitBrief repository.
+title: "[Bug]: "
+labels:
+  - bug
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report.
+
+        Before submitting, please confirm:
+        - This is not a security finding. Security reports go through the [private process](https://github.com/CommitBrief/.github/blob/main/SECURITY.md).
+        - This is a defect in the code or service, not an editorial issue about something we published. For editorial issues, email `commitbrief@muhammetsafak.com.tr` instead.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: A clear, one-paragraph description of the problem.
+      placeholder: When I trigger the ingestion job for source X, the worker exits with status 1 instead of marking the job as failed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Minimal, ordered steps that consistently surface the bug. Include any required configuration.
+      placeholder: |
+        1. Configure source `hn-frontpage` with fetch_frequency=300s
+        2. Run `make ingest-once SOURCE_ID=hn-frontpage`
+        3. Observe worker exit code
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened. Paste exact error messages where possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, stack traces, or screenshots
+      description: |
+        Paste relevant log output. Redact any secrets, API keys, or personally identifying information before submitting.
+      render: shell
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Repository commit SHA, release tag, or deployed image tag where the bug was observed.
+      placeholder: "main @ a1b2c3d, or v0.4.2, or image tag 2026-05-25.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Local development
+        - Staging
+        - Production
+        - CI
+        - Other (specify in summary)
+    validations:
+      required: true
+
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime details
+      description: Python version, OS, container image, or anything else relevant.
+      placeholder: "Python 3.12.3 on Ubuntu 24.04, Docker image commitbrief-worker:2026-05-25.1"
+    validations:
+      required: false
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Workaround
+      description: If you found a way to avoid the bug, describe it here.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have searched existing issues and confirmed this is not a duplicate.
+          required: true
+        - label: This report does not contain secrets, credentials, or unredacted personal data.
+          required: true
+        - label: I have read the [Code of Conduct](https://github.com/CommitBrief/.github/blob/main/CODE_OF_CONDUCT.md).
+          required: true
