@@ -1,0 +1,96 @@
+name: Feature request
+description: Propose a new feature or enhancement.
+title: "[feat]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest an improvement.
+
+        Before submitting:
+        - Search [open and closed issues](../issues?q=is%3Aissue) to see if it has been discussed.
+        - For broad ideas that need shaping, consider opening a **Discussion** first.
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: |
+        What is hard or impossible today? What problem are you trying to solve?
+        Lead with the **why**, not the **what**.
+      placeholder: |
+        When I run `commitbrief --pull-request` on a large branch, I want to...
+        Currently this is hard because...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: |
+        How could this work? Even a rough sketch is helpful.
+        If you are proposing a CLI surface change, include example invocations.
+      placeholder: |
+        Add a `--scope` flag that...
+        Example:
+          $ commitbrief --pull-request main...feature --scope=changed-only
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: |
+        Other ways the same problem could be solved (including "do nothing").
+        What are the trade-offs of each?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope of impact
+      options:
+        - User-facing CLI behavior
+        - Configuration
+        - Provider integration
+        - Output / rendering
+        - Performance
+        - Documentation
+        - Build / release / distribution
+        - Other (explain in motivation)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this for you?
+      options:
+        - Critical — I cannot use the tool without this
+        - High — significantly improves my workflow
+        - Medium — nice to have
+        - Low — minor polish
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Links, screenshots, references to prior art, related issues.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgments
+      options:
+        - label: I have searched existing issues and discussions to avoid duplicates.
+          required: true
+        - label: I understand this is a maintainer-driven project and there is no guarantee my request will be implemented.
+          required: true

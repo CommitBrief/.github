@@ -1,0 +1,115 @@
+name: Bug report
+description: Report something that is broken or misbehaving.
+title: "[bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report.
+
+        Before submitting, please:
+        - Search [open and closed issues](../issues?q=is%3Aissue) to avoid duplicates.
+        - Have the exact command, environment, and output ready.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Output of `commitbrief --version` (or equivalent for the affected tool).
+      placeholder: "v0.3.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Linux
+        - Windows
+        - Other (specify in "Additional context")
+    validations:
+      required: true
+
+  - type: input
+    id: arch
+    attributes:
+      label: Architecture
+      description: e.g. amd64, arm64
+      placeholder: "arm64"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: provider
+    attributes:
+      label: AI provider (if relevant)
+      options:
+        - Anthropic
+        - OpenAI
+        - Google Gemini
+        - Ollama (local)
+        - Not relevant / not configured
+    validations:
+      required: false
+
+  - type: textarea
+    id: command
+    attributes:
+      label: Command that triggered the bug
+      description: Paste the exact command you ran. Redact any API keys.
+      placeholder: |
+        $ commitbrief --staged --verbose
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead? Include error messages and relevant output (redact secrets).
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps to reproduce the issue.
+      placeholder: |
+        1. Run `commitbrief setup` and configure provider X
+        2. Stage a file containing Y
+        3. Run `commitbrief --staged`
+        4. Observe error
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Logs, screenshots, config snippets, anything else relevant. Redact API keys.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgments
+      options:
+        - label: I have searched existing issues to avoid duplicates.
+          required: true
+        - label: I have redacted API keys and other secrets from the output above.
+          required: true

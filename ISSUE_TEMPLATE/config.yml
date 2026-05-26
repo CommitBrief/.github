@@ -1,0 +1,13 @@
+# Issue template chooser configuration
+# Docs: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+
+blank_issues_enabled: false
+
+contact_links:
+  - name: Questions and discussion
+    url: https://github.com/orgs/CommitBrief/discussions
+    about: For "how do I...?" questions, design discussions, and general usage help. Please do not open an issue for these.
+
+  - name: Security vulnerabilities
+    url: https://github.com/CommitBrief/.github/blob/main/SECURITY.md
+    about: Do not file public issues for security reports. Follow the private reporting steps in SECURITY.md.
