@@ -9,6 +9,12 @@
 
 CommitBrief is a developer-first toolchain that brings AI code review into the terminal, right next to `git`. No web UI, no SaaS dashboard, no telemetry — just a faster feedback loop on the code you are about to commit.
 
+[![Latest release](https://img.shields.io/github/v/release/CommitBrief/commitbrief?sort=semver&label=latest&color=2ea043)](https://github.com/CommitBrief/commitbrief/releases/latest) [![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue)](https://github.com/CommitBrief/commitbrief/blob/main/LICENSE) [![Platforms](https://img.shields.io/badge/platforms-Linux%20%7C%20macOS%20%7C%20Windows-informational)](https://github.com/CommitBrief/commitbrief/releases/latest)
+
+<!-- Duyuru bloğu: her yeni release'de sürüm + headline özelliği güncelle. -->
+> [!NOTE]
+> 🎉 **`v1.1.0` is out.** CommitBrief is now **stable** (strict semver since `v1.0.0`) and ships **`commitbrief remote pr <ID>`** — review a GitHub pull request straight from your terminal: each finding is posted as an inline review comment, plus an approve / comment / request-changes verdict. Install via Homebrew, Scoop, or `go install`. → [Release notes](https://github.com/CommitBrief/commitbrief/releases/latest)
+
 ---
 
 ## Why?
@@ -42,7 +48,7 @@ Want a fully local, privacy-first setup? Point CommitBrief at Ollama and your fa
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| [**commitbrief**](https://github.com/CommitBrief/commitbrief) | The CLI: review `--staged`, `--unstaged`, a single file, a commit, a branch, or a PR range. Streams to your terminal in your language. | In development |
+| [**commitbrief**](https://github.com/CommitBrief/commitbrief) | The CLI: review `--staged` / `--unstaged`, any `git diff` range, or a GitHub PR (`remote pr`). Structured findings in your terminal, in your language. | **Stable — v1.1.0** |
 
 Companion tools (planned):
 - A GitHub Action that runs CommitBrief in CI on pull requests.
