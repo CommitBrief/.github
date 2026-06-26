@@ -43,7 +43,7 @@ We will not publish details before a fix is available, and we ask you to do the 
 
 ## Supported versions
 
-Security patches are issued for the **latest released minor version** of each project. Once a project reaches v1.0, the policy will be revisited; until then, expect rolling updates on the current release line.
+Security patches are issued for the **latest released minor version** of each project. `commitbrief` is past v1.0 and follows **strict semver**, so fixes land on the current release line and ship as the next patch or minor release — please upgrade to the latest version before reporting. Older minor versions do not receive backported patches.
 
 ## Acknowledgments
 

@@ -20,7 +20,7 @@ body:
         What is hard or impossible today? What problem are you trying to solve?
         Lead with the **why**, not the **what**.
       placeholder: |
-        When I run `commitbrief --pull-request` on a large branch, I want to...
+        When I run `commitbrief remote pr <ID>` on a large branch, I want to...
         Currently this is hard because...
     validations:
       required: true
@@ -35,7 +35,7 @@ body:
       placeholder: |
         Add a `--scope` flag that...
         Example:
-          $ commitbrief --pull-request main...feature --scope=changed-only
+          $ commitbrief diff main...feature --scope=changed-only
     validations:
       required: true
 
