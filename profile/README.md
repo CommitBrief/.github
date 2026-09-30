@@ -11,6 +11,8 @@ CommitBrief is a developer-first toolchain that brings AI code review into the t
 
 [![Latest release](https://img.shields.io/github/v/release/CommitBrief/commitbrief?sort=semver&label=latest&color=2ea043)](https://github.com/CommitBrief/commitbrief/releases/latest) [![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue)](https://github.com/CommitBrief/commitbrief/blob/main/LICENSE) [![Platforms](https://img.shields.io/badge/platforms-Linux%20%7C%20macOS%20%7C%20Windows-informational)](https://github.com/CommitBrief/commitbrief/releases/latest)
 
+[![Designed & Maintained with Tan](https://www.muhammetsafak.com.tr/badges/designed-maintained-with-tan.svg)](https://www.muhammetsafak.com.tr/en/tan/)
+
 <!-- Duyuru bloğu: her yeni release'de sürüm + headline özelliği güncelle. -->
 > [!NOTE]
 > 🎉 **`v1.12.0` is out.** CommitBrief has grown well past a diff reviewer — it now also writes Conventional Commit messages (`commitbrief commit`), gates merges on a per-severity finding budget (`commitbrief guard`), reviews a GitHub pull request inline (`commitbrief remote pr <ID>`), and runs as an **MCP server** (`commitbrief mcp`) so coding agents can use it as a review gate. **Ten providers** out of the box, **strict semver** since `v1.0.0`. Install via Homebrew, Scoop, or `go install`. → [Release notes](https://github.com/CommitBrief/commitbrief/releases/latest)
