@@ -52,6 +52,6 @@ Some repositories add their own `CONTRIBUTING.md` with extra detail (build comma
 
 ## Questions
 
-Open a **Discussion** in the relevant repository, or email **info@muhammetsafak.com.tr** for anything that needs to be off-channel.
+Open a **Discussion** in the relevant repository, or email **info@muhammetsafak.com** for anything that needs to be off-channel.
 
 Thank you for helping us improve CommitBrief.

@@ -78,7 +78,7 @@ Companion tools (planned):
 
 - **General questions:** open a discussion on the relevant repo.
 - **Bug reports:** open an issue with the bug-report template.
-- **Security:** see each repo's `SECURITY.md`, or email **info@muhammetsafak.com.tr**.
+- **Security:** see each repo's `SECURITY.md`, or email **info@muhammetsafak.com**.
 
 ---
 

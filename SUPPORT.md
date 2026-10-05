@@ -32,11 +32,11 @@ Substantive proposals are most useful when they describe:
 
 ## Security vulnerabilities
 
-Do **not** open a public issue. Follow [SECURITY.md](SECURITY.md) and email **info@muhammetsafak.com.tr**.
+Do **not** open a public issue. Follow [SECURITY.md](SECURITY.md) and email **info@muhammetsafak.com**.
 
 ## Direct contact
 
-For anything that does not fit the above — commercial use, integrations, sponsorship questions, anything off-channel — email **info@muhammetsafak.com.tr**. Please keep public technical questions in public channels so others can benefit from the answer.
+For anything that does not fit the above — commercial use, integrations, sponsorship questions, anything off-channel — email **info@muhammetsafak.com**. Please keep public technical questions in public channels so others can benefit from the answer.
 
 ## What we cannot help with
 

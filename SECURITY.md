@@ -8,7 +8,7 @@ This document applies to **all repositories under the [CommitBrief](https://gith
 
 Send vulnerability reports privately to:
 
-**info@muhammetsafak.com.tr**
+**info@muhammetsafak.com**
 
 If GitHub Security Advisories are enabled on the affected repository, you may also use the [private vulnerability reporting](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability) feature.
 
