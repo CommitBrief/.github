@@ -11,11 +11,11 @@ CommitBrief is a developer-first toolchain that brings AI code review into the t
 
 [![Latest release](https://img.shields.io/github/v/release/CommitBrief/commitbrief?sort=semver&label=latest&color=2ea043)](https://github.com/CommitBrief/commitbrief/releases/latest) [![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue)](https://github.com/CommitBrief/commitbrief/blob/main/LICENSE) [![Platforms](https://img.shields.io/badge/platforms-Linux%20%7C%20macOS%20%7C%20Windows-informational)](https://github.com/CommitBrief/commitbrief/releases/latest)
 
-[![Designed & Maintained with Tan](https://www.muhammetsafak.com.tr/badges/designed-maintained-with-tan.svg)](https://www.muhammetsafak.com.tr/en/tan/)
+[![Designed & Maintained with Tan](https://muhammetsafak.com/badges/designed-maintained-with-tan.svg)](https://muhammetsafak.com/tan/)
 
 <!-- Duyuru bloğu: her yeni release'de sürüm + headline özelliği güncelle. -->
 > [!NOTE]
-> 🎉 **`v1.12.0` is out.** CommitBrief has grown well past a diff reviewer — it now also writes Conventional Commit messages (`commitbrief commit`), gates merges on a per-severity finding budget (`commitbrief guard`), reviews a GitHub pull request inline (`commitbrief remote pr <ID>`), and runs as an **MCP server** (`commitbrief mcp`) so coding agents can use it as a review gate. **Ten providers** out of the box, **strict semver** since `v1.0.0`. Install via Homebrew, Scoop, or `go install`. → [Release notes](https://github.com/CommitBrief/commitbrief/releases/latest)
+> 🎉 **`v1.18.1` is out.** CommitBrief has grown well past a diff reviewer — it writes Conventional Commit messages (`commitbrief commit`), gates merges on a declarative policy (`commitbrief guard`), reviews a GitHub pull request inline (`commitbrief remote pr <ID>`), audits your tree and history for committed credentials (`commitbrief leaks`), and runs as an **MCP server** (`commitbrief mcp`) so coding agents can use it as a review gate. **Ten providers** out of the box, **strict semver** since `v1.0.0`. Install via Homebrew, Scoop, or `go install`, and update in place with `commitbrief upgrade`. → [Release notes](https://github.com/CommitBrief/commitbrief/releases/latest)
 
 ---
 
@@ -27,7 +27,7 @@ Every modern engineer ships code under two opposing pressures: review thoroughne
 - **Ask a colleague** — high-quality, but a costly synchronous round-trip.
 - **Paste into a chat UI** — friction, no project rules, no caching, no git context.
 
-CommitBrief fills the gap: a five-second AI-assisted pre-check on the diff in front of you, using rules **you defined**, run against the AI provider **you chose** (including local-only Ollama).
+CommitBrief fills the gap: a quick AI-assisted pre-check on the diff in front of you, using rules **you defined**, run against the AI provider **you chose** (including local-only Ollama).
 
 ---
 
@@ -52,15 +52,15 @@ Want a fully local, privacy-first setup? Point CommitBrief at Ollama and your fa
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| [**commitbrief**](https://github.com/CommitBrief/commitbrief) | The CLI: review `--staged` / `--unstaged`, any `git diff` range, a single file, or a GitHub PR (`remote pr`); generate commit messages (`commit`); gate merges (`guard`); serve an MCP review gate (`mcp`). Structured findings in your terminal, in your language. | **Stable — v1.12.0** |
+| [**commitbrief**](https://github.com/CommitBrief/commitbrief) | The CLI: review `--staged` / `--unstaged`, any `git diff` range, a single file, or a GitHub PR (`remote pr`); generate commit messages (`commit`); gate merges (`guard`); serve an MCP review gate (`mcp`). Structured findings in your terminal, in your language. | **Stable — v1.18.1** |
+| [**commitbrief-action**](https://github.com/CommitBrief/commitbrief-action) | Composite GitHub Action that runs CommitBrief on pull requests: inline comments + verdict (`comment`), a severity gate (`gate`), or the policy gate (`guard`). Pin `@v1`. | **Stable — v1** |
 
 Built in already:
 - An **MCP server** (`commitbrief mcp`) so coding agents can call CommitBrief as a review gate over stdio.
 - **PR review from the terminal** (`commitbrief remote pr <ID>`) via your local `gh` CLI — inline comments plus a verdict.
 
-Companion tools (planned):
-- A GitHub Action that runs CommitBrief in CI on pull requests.
-- A VS Code extension that wraps the CLI for in-editor reviews.
+Planned for the next major line:
+- IDE extensions that wrap the CLI for in-editor reviews.
 
 ---
 
@@ -69,8 +69,8 @@ Companion tools (planned):
 - **Privacy-first.** No telemetry, no remote config, no shared state. Your code stays where you put it.
 - **Provider-agnostic.** Ten providers out of the box — Anthropic, OpenAI, Gemini and local Ollama natively; DeepSeek, Mistral and Cohere over their OpenAI-compatible APIs; plus `claude-cli`, `gemini-cli` and `codex-cli` that reuse a CLI subscription you already pay for. No vendor lock-in.
 - **Developer-controlled.** You define the review rules in plain Markdown in your repo. CommitBrief reads them as the system prompt — no DSL to learn.
-- **Terminal-native.** Streaming output, color, glamour-rendered Markdown. JSON when you need to script around it.
-- **Open source.** All projects under **GPL-3.0**.
+- **Terminal-native.** Colored finding cards and glamour-rendered Markdown in the terminal; strict JSON when you need to script around it.
+- **Open source.** All projects under **GPL-3.0-or-later**.
 
 ---
 
@@ -78,7 +78,7 @@ Companion tools (planned):
 
 - **General questions:** open a discussion on the relevant repo.
 - **Bug reports:** open an issue with the bug-report template.
-- **Security:** see each repo's `SECURITY.md`, or email **info@muhammetsafak.com**.
+- **Security:** report privately via GitHub's [private vulnerability reporting](https://github.com/CommitBrief/commitbrief/security/advisories/new) (see each repo's `SECURITY.md`), or email **info@muhammetsafak.com**.
 
 ---
 
