@@ -54,6 +54,7 @@ Want a fully local, privacy-first setup? Point CommitBrief at Ollama and your fa
 |---------|-------------|--------|
 | [**commitbrief**](https://github.com/CommitBrief/commitbrief) | The CLI: review `--staged` / `--unstaged`, any `git diff` range, a single file, or a GitHub PR (`remote pr`); generate commit messages (`commit`); gate merges (`guard`); scan for committed secrets (`leaks`); serve an MCP review gate (`mcp`). Structured findings in your terminal, in your language. | **Stable — v1.23.0** |
 | [**commitbrief-action**](https://github.com/CommitBrief/commitbrief-action) | Composite GitHub Action that runs CommitBrief on pull requests: inline comments + verdict (`comment`), a severity gate (`gate`), or the policy gate (`guard`). Pin `@v1`. | **Stable — v1** |
+| [**ui**](https://github.com/CommitBrief/ui) | CommitBrief UI: a desktop app that drives the `commitbrief` CLI to review local repositories and pull requests, on demand or on a schedule. | **In development — no stable release yet** |
 
 Built in already:
 - An **MCP server** (`commitbrief mcp`) so coding agents can call CommitBrief as a review gate over stdio.
@@ -76,7 +77,7 @@ Planned for the next major line:
 
 ## Contact
 
-- **General questions:** open a discussion on the relevant repo.
+- **General questions:** open a [discussion](https://github.com/CommitBrief/commitbrief/discussions) on the CLI repository.
 - **Bug reports:** open an issue with the bug-report template.
 - **Security:** report privately via GitHub's [private vulnerability reporting](https://github.com/CommitBrief/commitbrief/security/advisories/new) (see each repo's `SECURITY.md`), or email **info@muhammetsafak.com**.
 

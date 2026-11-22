@@ -4,7 +4,7 @@ Different questions belong in different places. Picking the right channel gets y
 
 ## "How do I…?" / general questions
 
-Use **Discussions** in the repository that the question is about. If the project does not yet have Discussions enabled, open an issue with the prefix `question:` in the title.
+Use [**Discussions**](https://github.com/CommitBrief/commitbrief/discussions) on the CLI repository — it is the shared Q&A space for every CommitBrief project. If your question is about another repository and does not fit there, open an issue in that repository with the prefix `question:` in the title.
 
 Examples:
 - "How do I switch providers per repository?"
@@ -32,7 +32,7 @@ Substantive proposals are most useful when they describe:
 
 ## Security vulnerabilities
 
-Do **not** open a public issue. Follow [SECURITY.md](SECURITY.md) and email **info@muhammetsafak.com**.
+Do **not** open a public issue. Report privately through GitHub's private vulnerability reporting as described in [SECURITY.md](SECURITY.md); email **info@muhammetsafak.com** only if you cannot use GitHub.
 
 ## Direct contact
 

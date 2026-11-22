@@ -22,7 +22,7 @@ Before opening an issue:
 - Search existing **open and closed** issues — you may not be the first to hit it.
 - For bugs, prefer the **bug report** template and fill in every field. Reproduction steps with the exact command, OS, and version save us hours.
 - For features, prefer the **feature request** template and describe the motivation first, the proposal second.
-- For "how do I…" or "is this supported?" questions, use **Discussions** instead of Issues.
+- For "how do I…" or "is this supported?" questions, use [Discussions](https://github.com/CommitBrief/commitbrief/discussions) on the CLI repository instead of Issues.
 
 ## Pull requests
 
@@ -52,6 +52,6 @@ Some repositories add their own `CONTRIBUTING.md` with extra detail (build comma
 
 ## Questions
 
-Open a **Discussion** in the relevant repository, or email **info@muhammetsafak.com** for anything that needs to be off-channel.
+Open a [Discussion](https://github.com/CommitBrief/commitbrief/discussions) on the CLI repository, or email **info@muhammetsafak.com** for anything that needs to be off-channel.
 
 Thank you for helping us improve CommitBrief.
