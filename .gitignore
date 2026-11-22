@@ -1,2 +1,5 @@
 # CommitBrief local config and cache
 .commitbrief/
+
+# macOS Finder metadata
+.DS_Store

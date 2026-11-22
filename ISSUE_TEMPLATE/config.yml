@@ -5,7 +5,7 @@ blank_issues_enabled: false
 
 contact_links:
   - name: Questions and discussion
-    url: https://github.com/orgs/CommitBrief/discussions
+    url: https://github.com/CommitBrief/commitbrief/discussions
     about: For "how do I...?" questions, design discussions, and general usage help. Please do not open an issue for these.
 
   - name: Security vulnerabilities

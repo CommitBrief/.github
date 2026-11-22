@@ -40,7 +40,7 @@ For anything that does not fit the above — commercial use, integrations, spons
 
 ## What we cannot help with
 
-- Account or billing questions for third-party AI providers (Anthropic, OpenAI, Google, Ollama). Contact them directly.
+- Account or billing questions for third-party AI providers (Anthropic, OpenAI, Google, DeepSeek, Mistral, Cohere, Ollama) or for the CLIs CommitBrief can drive (Claude Code, Gemini CLI, Codex CLI). Contact them directly.
 - Generic Go / git questions unrelated to CommitBrief.
 - "Please review my project's code" requests outside the documented `commitbrief` workflow.
 

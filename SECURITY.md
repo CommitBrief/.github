@@ -6,7 +6,7 @@ This document applies to **all repositories under the [CommitBrief](https://gith
 
 **Please do not open a public issue for security reports.**
 
-Report vulnerabilities privately through GitHub's [private vulnerability reporting](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability) on the affected repository — for the CLI, use [Report a vulnerability](https://github.com/CommitBrief/commitbrief/security/advisories/new).
+Report vulnerabilities privately through GitHub's [private vulnerability reporting](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability) on the affected repository — for the CLI, use [Report a vulnerability](https://github.com/CommitBrief/commitbrief/security/advisories/new). If the affected repository does not offer a **Report a vulnerability** button, use the CLI's form and name the affected repository in the report.
 
 If you cannot use GitHub, email **info@muhammetsafak.com** instead.
 

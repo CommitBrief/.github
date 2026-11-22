@@ -29,7 +29,7 @@ Before opening an issue:
 - Keep PRs **focused**. One logical change per PR. Refactors that touch many files should be split into preparatory PRs and the substantive change.
 - Write the PR description with a **summary** and a **test plan**. The PR template captures both.
 - Reference related issues with `Fixes #N` or `Refs #N`.
-- Run `make lint test` locally before pushing. CI will run the same checks plus a build matrix.
+- Run `make check` locally before pushing (in the CLI repository it runs formatting, `go vet`, lint, tests and the release, i18n, SPDX and docs checks). CI runs the same gates plus a build matrix.
 - **Commit messages** follow [Conventional Commits](https://www.conventionalcommits.org/) on the default branch. Examples:
   - `feat(provider): add Mistral support`
   - `fix(cache): handle TTL boundary correctly`
@@ -40,7 +40,7 @@ Before opening an issue:
 - **Go:** the codebase uses `gofmt`, `goimports`, and `golangci-lint` with the project's `.golangci.yml`. CI rejects unformatted or lint-failing PRs.
 - **Comments:** explain *why*, not *what*. Code should be readable on its own.
 - **Tests:** add tests for every behavior change. Aim for the smallest test that demonstrates the issue.
-- **Public-facing strings** in the CLI go through `internal/i18n`. Never hard-code user-visible text; use a key with entries in both `messages.en.yml` and `messages.tr.yml`.
+- **Public-facing strings** in the CLI go through `internal/i18n`. Never hard-code user-visible text; use a key with entries in both `internal/i18n/messages.en.yml` and `internal/i18n/messages.tr.yml` (`make i18n-check` enforces EN/TR parity).
 
 ## Security issues
 

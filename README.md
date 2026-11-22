@@ -19,12 +19,13 @@ This repository holds the community health files and templates that apply to **e
 
 ## How overrides work
 
-GitHub looks for a file in this order when a repository event needs one:
+GitHub uses a file from this repository only when the target repository does not have its own. For a given file, GitHub looks in the target repository's `.github/` directory, its root, and its `docs/` directory; if none of them has the file, it falls back to the copy here.
 
-1. `repo/.github/<file>` — repository-specific override.
-2. `repo/<file>` — at the repository root.
-3. `org/.github/.github/<file>` — this repository (with `.github/` prefix for templates).
-4. `org/.github/<file>` — this repository (for `CONTRIBUTING.md`, `SECURITY.md`, etc.).
+A few details worth knowing:
+
+- Issue templates are all-or-nothing: if a repository has its own `.github/ISSUE_TEMPLATE/` directory, none of the templates here (including `config.yml`) apply to it.
+- `LICENSE` is never inherited; every repository carries its own.
+- This repository must stay **public**; GitHub ignores defaults from a private `.github` repository.
 
 In practice: **add a file to a specific repository to override the default here**.
 

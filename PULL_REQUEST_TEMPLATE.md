@@ -34,7 +34,7 @@
   break? Be specific: commands run, scenarios tested, edge cases considered.
 -->
 
-- [ ] `make lint test` passes locally
+- [ ] `make check` passes locally
 - [ ] Added or updated tests for the new behavior
 - [ ] Manually verified the affected commands in a real repo
 
@@ -47,7 +47,7 @@
 
 ## Checklist
 
-- [ ] I have read the [Contributing guide](../CONTRIBUTING.md).
+- [ ] I have read the [Contributing guide](https://github.com/CommitBrief/.github/blob/main/CONTRIBUTING.md).
 - [ ] My contribution is licensed under GPL-3.0-or-later (inbound = outbound).
 - [ ] User-facing strings use `internal/i18n` (no hard-coded text).
-- [ ] If this changes user-visible behavior, the README / man page / `commitbrief list` output has been updated accordingly.
+- [ ] If this changes user-visible behavior, the docs on [commitbrief.com](https://commitbrief.com/docs/) (and the README or man page where affected) have been updated accordingly.

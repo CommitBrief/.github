@@ -15,7 +15,7 @@ CommitBrief is a developer-first toolchain that brings AI code review into the t
 
 <!-- Duyuru bloğu: her yeni release'de sürüm + headline özelliği güncelle. -->
 > [!NOTE]
-> 🎉 **`v1.18.1` is out.** CommitBrief has grown well past a diff reviewer — it writes Conventional Commit messages (`commitbrief commit`), gates merges on a declarative policy (`commitbrief guard`), reviews a GitHub pull request inline (`commitbrief remote pr <ID>`), audits your tree and history for committed credentials (`commitbrief leaks`), and runs as an **MCP server** (`commitbrief mcp`) so coding agents can use it as a review gate. **Ten providers** out of the box, **strict semver** since `v1.0.0`. Install via Homebrew, Scoop, or `go install`, and update in place with `commitbrief upgrade`. → [Release notes](https://github.com/CommitBrief/commitbrief/releases/latest)
+> 🎉 **`v1.23.0` is out.** CommitBrief has grown well past a diff reviewer — it writes Conventional Commit messages (`commitbrief commit`), gates merges on a declarative policy (`commitbrief guard`), reviews a GitHub pull request inline (`commitbrief remote pr <ID>`), audits your tree and history for committed credentials (`commitbrief leaks`), summarizes a change set in plain language (`commitbrief summary`), draws your commit graph (`commitbrief map`), and runs as an **MCP server** (`commitbrief mcp`) so coding agents can use it as a review gate. **Ten providers** out of the box, **strict semver** since `v1.0.0`. Install via Homebrew, Scoop, or `go install`, and update in place with `commitbrief upgrade`. → [Release notes](https://github.com/CommitBrief/commitbrief/releases/latest)
 
 ---
 
@@ -52,7 +52,7 @@ Want a fully local, privacy-first setup? Point CommitBrief at Ollama and your fa
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| [**commitbrief**](https://github.com/CommitBrief/commitbrief) | The CLI: review `--staged` / `--unstaged`, any `git diff` range, a single file, or a GitHub PR (`remote pr`); generate commit messages (`commit`); gate merges (`guard`); serve an MCP review gate (`mcp`). Structured findings in your terminal, in your language. | **Stable — v1.18.1** |
+| [**commitbrief**](https://github.com/CommitBrief/commitbrief) | The CLI: review `--staged` / `--unstaged`, any `git diff` range, a single file, or a GitHub PR (`remote pr`); generate commit messages (`commit`); gate merges (`guard`); scan for committed secrets (`leaks`); serve an MCP review gate (`mcp`). Structured findings in your terminal, in your language. | **Stable — v1.23.0** |
 | [**commitbrief-action**](https://github.com/CommitBrief/commitbrief-action) | Composite GitHub Action that runs CommitBrief on pull requests: inline comments + verdict (`comment`), a severity gate (`gate`), or the policy gate (`guard`). Pin `@v1`. | **Stable — v1** |
 
 Built in already:
